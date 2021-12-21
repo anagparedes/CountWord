@@ -22,7 +22,6 @@ namespace CountWord
             PalabrasCaracteres[0] = palabras;
             PalabrasCaracteres[1] = caracterestotales;
             return PalabrasCaracteres;
-            int[] result  = Assert.AreEqual(PalabrasCaracteres,2)
 
         }
     }
