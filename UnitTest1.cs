@@ -6,8 +6,24 @@ namespace CountWord
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public static int[] TestMethod(string frase)
         {
+            int palabras = 0;
+            int caracterestotales = 0;
+            for (int i = 0; i < frase.Length; i++)
+            {
+                if (frase[i] == ' ' || frase[i] == '.')
+                {
+                    palabras++;
+                }
+            }
+            int[] PalabrasCaracteres = new int[2];
+            caracterestotales = frase.Length - palabras;
+            PalabrasCaracteres[0] = palabras;
+            PalabrasCaracteres[1] = caracterestotales;
+            return PalabrasCaracteres;
+            int[] result  = Assert.AreEqual(PalabrasCaracteres,2)
+
         }
     }
 }
